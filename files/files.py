@@ -1,6 +1,10 @@
-f = open("countries.txt", "r")
+countries_file = open("countries.txt", "r")
+my_country_file = open("my_country.txt", "w")
 
-for line in f:
-    print(line)
+for country in countries_file:
+    country = country.strip()
+    if country == "India":
+        my_country_file.write(country + '\n')
 
-f.close()
+countries_file.close()
+my_country_file.close()
