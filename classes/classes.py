@@ -3,7 +3,8 @@ class Greeter(object):
         self.name = name
 
     def greet(self):
-        print("Hi "+ self.name)
+        print("Hi " + self.name)
+
 
 g1 = Greeter("Sachin")
 g1.greet()
