@@ -1,1 +1,2 @@
-# python_poc
+# python-dojos
+Python [Dojos](https://codingdojo.org/)
