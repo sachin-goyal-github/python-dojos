@@ -1,12 +1,12 @@
-'''
+"""
 # http://codekata.com/kata/kata04-data-munging/
 
 Part One: Weather Data
-In weather.dat you’ll find daily weather data for Morristown, NJ for June 2002. 
-Download this text file, then write a program to output the day number (column one) 
-with the smallest temperature spread (the maximum temperature is the second column, 
+In weather.dat you’ll find daily weather data for Morristown, NJ for June 2002.
+Download this text file, then write a program to output the day number (column one)
+with the smallest temperature spread (the maximum temperature is the second column,
 the minimum the third column).
-'''
+"""
 
 lines = []
 dayWithSmallestSpread = None
@@ -20,6 +20,5 @@ with open('weather.dat', 'r') as f:
             day = columns[0]
             spread = int(columns[1].strip("*")) - int(columns[2].strip("*"))
             spread_days[spread] = day
-
 
 print(spread_days[min(spread_days.keys())])
