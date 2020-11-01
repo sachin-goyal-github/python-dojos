@@ -8,9 +8,6 @@ with the smallest temperature spread (the maximum temperature is the second colu
 the minimum the third column).
 """
 
-lines = []
-dayWithSmallestSpread = None
-
 spread_days = {}
 
 with open('weather.dat', 'r') as f:
