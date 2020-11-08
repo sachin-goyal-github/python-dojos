@@ -64,8 +64,8 @@ for i in reversed(range(len(start_word))):
     current_character = next_word[i]
     next_character = get_next_letter(current_character)
 
-    # todo
-    
+    # todo (might have to use recursion)
+
     if next_word in dictionary:
         word_chain.append(next_word)
 
