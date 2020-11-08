@@ -58,16 +58,22 @@ if end_word not in dictionary:
     exit(1)
 
 next_word = start_word
+word_length = len(start_word)
 word_chain = []
 
-for i in reversed(range(len(start_word))):
-    current_character = next_word[i]
-    next_character = get_next_letter(current_character)
+for i in reversed(range(word_length)):
+    c = next_word[i]
+    next_c = get_next_letter(c)
 
-    # todo (might have to use recursion)
+    remaining_characters_length = word_length - i
+    for j in range(remaining_characters_length):
+        for ascii_c in string.ascii_lowercase:
+            # next_word = next_word.replace()
+            # todo
+            pass
 
-    if next_word in dictionary:
-        word_chain.append(next_word)
+            if next_word in dictionary:
+                word_chain.append(next_word)
 
-    if next_word == end_word:
-        break
+            if next_word == end_word:
+                break
